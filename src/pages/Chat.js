@@ -4,18 +4,16 @@ import Sidebar from "../components/Sidebar";
 import MessageForm from '../components/MessageForm';
 
 function Chat() {
-  return (
-    <Container>
+  return <Container fluid className="p-30">
       <Row>
-        <Col>
-          <Sidebar md={4}/>
+        <Col md={4}>
+          <Sidebar/>
         </Col>
-        <Col>
-          <MessageForm md={8}/>
+        <Col md={8}>
+          <MessageForm/>
         </Col>
       </Row>
     </Container>
-  )
 }
 
 export default Chat
